@@ -9,7 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        return RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3).padding(.horizontal).foregroundColor(.red)
+        
+        //same as ZSTack {  -'cause alignment default is center, and content is the main argument of the function
+        
+        ZStack(alignment: .center, content: {
+            RoundedRectangle(cornerRadius: 20).stroke(lineWidth: 3)
+            
+            Text("Hello World!")
+                .foregroundColor(.orange)
+                
+        })
+        .padding(.horizontal)
+        .foregroundColor(.red)
+        
     }
 }
 
