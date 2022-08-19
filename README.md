@@ -1,4 +1,7 @@
 # memorize-game
 
 Stanford University Course
-Applications for iOS using SwiftUI
+
+mini-game Memorize for iOS using SwiftUI
+
+application is still under construction :)
